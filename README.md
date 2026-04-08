@@ -1,10 +1,38 @@
-# Personal LLM Wiki 🧠
+<div align="center">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Streamlit-Dark.svg" height="80" alt="Streamlit"/>
+  <h1>🧠 Personal LLM Wiki</h1>
+  <p><em>An invisible local AI librarian that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private.</em></p>
+  
+  <p>
+    <a href="https://github.com/aswin-pn/Personal-wiki-using-llama/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+    <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-black?logo=python" alt="Python Version"></a>
+    <a href="https://ollama.com/"><img src="https://img.shields.io/badge/Ollama-Local_LLM-orange?logo=meta" alt="Ollama"></a>
+  </p>
+</div>
 
-An invisible local AI librarian that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private, powered by Llama 3 (or any local LLM).
+---
 
-## Architecture
+## 🌟 Vision
+Imagine a silent librarian living in your computer. You drop your research papers, meeting notes, PDFs, and images into a folder, and it instantly categorizes, reads, and writes an interlinked Wikipedia-style article for you. Best of all? **It's 100% private, runs offline, and doesn't send a single byte of your data to the cloud.**
 
-The project consists of two main loops: the **Ingestion Engine** (Invisible Librarian) and the **Streamlit Web UI**.
+## 📸 Interface
+
+![Personal LLM Wiki UI Screenshot](assets/ui_screenshot.png)
+*(Drop your files in the sidebar and start chatting instantly!)*
+
+---
+
+## 🚀 Key Features
+- **100% Offline & Private:** Powered by your local LLM via [Ollama](https://ollama.com/). Your personal files stay on your machine.
+- **Auto-Ingestion Engine:** Just drop `.pdf`, `.docx`, `.txt`, or `.png` (built-in OCR) into the `raw/` folder. The Watchdog automatically compiles a comprehensive Wiki page.
+- **MediaWiki Aesthetics:** A beautifully styled web UI that looks and feels like Wikipedia, complete with markdown rendering and bidirectional link styling.
+- **Chat with your Wiki:** Built-in Chatbot that uses local RAG to automatically retrieve pages from your wiki and provide contextual answers.
+
+---
+
+## 🏗️ Architecture Stack
+
+The project relies on a decoupled two-loop architecture: the **Ingestion Engine** (Invisible Librarian) and the **Web Interface**.
 
 ```mermaid
 graph TD
@@ -25,64 +53,69 @@ graph TD
     UI -->|Queries Wiki| Ollama
 ```
 
-## Features
-*   **100% Private:** Using Ollama to run LLMs completely offline. No data is sent to external APIs like OpenAI.
-*   **Auto-Ingestion:** Just drop a `.pdf`, `.docx`, `.txt`, `.png` (OCR support) into the `raw/` folder, and the watchdog immediately writes a comprehensive Wiki page for it.
-*   **MediaWiki Interface:** Web UI designed to look like a Wikipedia page with markdown rendering and bidirectional link styling.
-*   **Chat with Wiki:** Chatbot that automatically retrieves pages from your wiki to ground its answers using local RAG-like behavior.
+---
 
-## Prerequisites
+## 🛠️ Prerequisites
 
-1.  **Python 3.8+**
-2.  **Ollama**: Install from [ollama.com](https://ollama.com/)
-3.  **Tesseract OCR** (For image parsing):
-    *   Mac: `brew install tesseract`
-    *   Linux: `sudo apt install tesseract-ocr`
+Before you start, ensure you have the following installed:
+1. **Python 3.8+**
+2. **[Ollama](https://ollama.com/)** (The local LLM runner)
+3. **Tesseract OCR** (For image support):
+   - **Mac:** `brew install tesseract`
+   - **Linux:** `sudo apt install tesseract-ocr`
 
-## Installation
+---
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/Personal-wiki-using-llama.git
-    cd Personal-wiki-using-llama
-    ```
+## ⚙️ Installation
 
-2.  **Set up the Virtual Environment & Install Requirements:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    ```
-
-3.  **Pull the Default LLM (Llama 3):**
-    ```bash
-    ollama pull llama3
-    ```
-    *(You can change the model by creating a `.env` file from `.env.example`)*
-
-## Usage
-
-You must run both scripts simultaneously in two separate terminals.
-
-**Terminal 1: Start the Background Librarian**
-This script watches for incoming files and converts them in the background.
+**1. Clone the repository:**
 ```bash
+git clone https://github.com/aswin-pn/Personal-wiki-using-llama.git
+cd Personal-wiki-using-llama
+```
+
+**2. Set up the Virtual Environment:**
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**3. Pull the Default LLM:**
+```bash
+ollama pull llama3
+```
+
+**4. Configuration:**
+Copy `.env.example` to `.env` to configure your preferred LLM.
+```bash
+cp .env.example .env
+```
+
+---
+
+## 🎮 Usage 
+
+To run the wiki, you must start both the Librarian and the Web UI in two separate terminals.
+
+> **Terminal 1: Start the Background Librarian**  
+> This script watches for incoming files and converts them into Wiki format automatically.
+```bash
+source venv/bin/activate
 python ingest.py
 ```
 
-**Terminal 2: Start the Web UI**
-This is where you browse and chat with your wiki.
+> **Terminal 2: Start the Web UI**  
+> This is your Wikipedia viewer and Chat UI.
 ```bash
+source venv/bin/activate
 streamlit run app.py
 ```
 
-## Configuration
+---
 
-We use an environment file (`.env`) for configuration. Copy `.env.example` to `.env` and modify it if you want to use a different model (e.g., `phi3` or `llama3.2-vision`):
-```ini
-OLLAMA_MODEL=phi3
-```
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/aswin-pn/Personal-wiki-using-llama/issues).
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
