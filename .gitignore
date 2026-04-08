@@ -1,0 +1,24 @@
+# Personal Notes Data
+# The folders are tracked via .gitkeep, but contents must be ignored
+raw/*
+!raw/.gitkeep
+wiki/*
+!wiki/.gitkeep
+archive/*
+!archive/.gitkeep
+
+# Ensure wiki/pages subfolder is also maintained empty and ignore content
+wiki/pages/*
+!wiki/pages/.gitkeep
+
+# Virtual environment and cache
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Secrets
+.env
