@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Streamlit-Dark.svg" height="80" alt="Streamlit"/>
   <h1>🧠 Personal LLM Wiki</h1>
   <p><em>An invisible local AI librarian that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private.</em></p>
   
