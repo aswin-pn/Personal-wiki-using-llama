@@ -3,7 +3,7 @@
   <p><em>An invisible local AI librarian that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private.</em></p>
   
   <p>
-    <a href="https://github.com/aswin-pn/Personal-wiki-using-llama/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+    <a href="https://github.com/aswin-pn/Personal-wiki-using-Gemma-4/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
     <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.8+-black?logo=python" alt="Python Version"></a>
     <a href="https://ollama.com/"><img src="https://img.shields.io/badge/Ollama-Local_LLM-orange?logo=meta" alt="Ollama"></a>
   </p>
@@ -69,8 +69,8 @@ Before you start, ensure you have the following installed:
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/aswin-pn/Personal-wiki-using-llama.git
-cd Personal-wiki-using-llama
+git clone https://github.com/aswin-pn/Personal-wiki-using-Gemma-4.git
+cd Personal-wiki-using-Gemma-4
 ```
 
 **2. Set up the Virtual Environment:**
@@ -114,7 +114,7 @@ streamlit run app.py
 ---
 
 ## 🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/aswin-pn/Personal-wiki-using-llama/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/aswin-pn/Personal-wiki-using-Gemma-4/issues).
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
