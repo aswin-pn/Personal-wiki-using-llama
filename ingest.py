@@ -14,7 +14,7 @@ def process_file(filepath):
         return
 
     filename = os.path.basename(filepath)
-    print("[*] Contacting local Ollama (llama3) for Wiki compilation...")
+    print("[*] Contacting local LLM for Wiki compilation...")
     
     success = compile_wiki_page(filename, content)
     if success:

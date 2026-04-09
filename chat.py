@@ -3,8 +3,7 @@ import requests
 import json
 import re
 
-OLLAMA_API = "http://localhost:11434/api/generate"
-MODEL_NAME = "llama3"
+from src.config import OLLAMA_API, MODEL_NAME
 
 def query_ollama(prompt):
     try:
