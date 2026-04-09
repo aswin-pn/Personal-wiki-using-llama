@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🧠 Personal LLM Wiki</h1>
-  <p><em>An Personal Wikipedia that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private.</em></p>
+  <p><em>Your Private Second Brain: An Personal Knowledge base that turns your documents, notes, and PDFs into an interlinked, fully searchable Wikipedia—entirely offline and private.</em></p>
   
   <p>
     <a href="https://github.com/aswin-pn/Personal-wiki-using-Gemma-4/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
@@ -12,7 +12,7 @@
 ---
 
 ## 🌟 Vision
-Imagine a Personal Wikipedia living in your computer. You drop your research papers, meeting notes, PDFs, and images into a folder, and it instantly categorizes, reads, and writes an interlinked Wikipedia-style article for you. Best of all? **It's 100% private, runs offline, and doesn't send a single byte of your data to the cloud.**
+Imagine a Personal Second brain living in your computer. You drop your research papers, meeting notes, PDFs, and images into a folder, and it instantly categorizes, reads, and writes an interlinked Personal Wikipedia-style article for you. Best of all? **It's 100% private, runs offline, and doesn't send a single byte of your data to the cloud.**
 
 ## 📸 Interface
 
