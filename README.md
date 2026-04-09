@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 **3. Pull the Default LLM:**
 ```bash
-ollama pull llama3
+ollama pull gemma4:e4b
 ```
 
 **4. Configuration:**
